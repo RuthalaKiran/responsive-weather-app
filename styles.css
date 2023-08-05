@@ -73,7 +73,11 @@ width: 30% !important;
     color:white ;
     }
     
-
+@media only screen and (max-width : 410px) {
+    .cityname p{
+        font-size: 30px !important;
+    }
+}
 
 @media only screen and (max-width : 768px) {
     .img-temp img{
