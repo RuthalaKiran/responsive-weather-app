@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
+
+   <!-- icons -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+
+</head>
+<body>
+ <div class="container-fluid h-100 fluid0 ">
+ 
+   <div class="container pt-4">
+
+     <!-- first row header  -->
+   <div class="row  ">
+    <div class="col-7 my-auto col-sm-8 col-md-9 col-lg-10 col-xl-10">
+        <p class="h1 weathername font-weight-bold " style="font-size: 35px; color: red; cursor: pointer;">Weather</p>
+    </div>
+    <div class="col-5 my-auto text-right col-sm-4 col-md-3 col-lg-2 col-xl-2 icons ">
+        <span class="span1 mr-3 mr-xl-4">
+        <img src="images/sun.png" class="w-25 sunimg " alt="">
+        </span>
+        <span class="span2 ">
+        <img src="images/moon.png" class="w-25 moonimg " alt="">
+        </span>
+    </div>
+   </div>
+
+    <!-- input that enter city -->
+     <div class="row enter-city">
+        <div class="col-xl-2 col-lg-2 col-md-2"></div>
+        <div class="col-12 col-md-8 col-lg-8 col-xl-8 pt-xl-3  pt-4 text-center ">
+            <div class="inputfeild">
+                <input type="text" placeholder="enter city" class="w-75 cityinput0 searchbox ">
+                <span class="material-symbols-outlined searchbtn">
+                    search
+                    </span>
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2"></div>
+     </div>
+   <!-- second row city name -->
+   <div class="row pt-xl-2 text-center cityname  ">
+    <div class="col-12 pt-3 col-xl-12 pt-xl-2 ">
+        <p class="display-4">City</p>
+    </div>
+   </div>
+
+   <!-- third row getting date -->
+   <div class="row pt-2 pt-xl-3 datetime ">
+    <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-4"></div>
+    <div class="col-8 col-sm-6 col-xl-4 col-md-6 col-lg-4  text-center">
+       <p class="date">d mm dd yy</p>
+    </div>
+    <div class="col-2 col-sm-3 col-lg-4 col-md-3 col-xl-4"></div>
+   </div>
+
+   <!-- fourth row image and temp -->
+    <div class="row  img-temp ">
+        <div class="col-6 text-center col-sm-6  col-lg-6  col-xl-6 text-xl-center">
+          <img src="images/clear.png" class="imgchange"  alt="">
+        </div>
+        <div class="col-6 text-center col-sm-6 col-lg-6 col-xl-6 text-xl-center my-auto">
+        <p class="h1 temp">0°C</p>
+        </div>
+    </div>
+
+    <!-- fifth row extra suff -->
+    <div class="row pt-3 pb-lg-3 pb-md-2 extra-stuff ">
+        <div class="col-12 text-center col-md-6 col-lg-6 col-xl-6 text-xl-right ">
+            <p class="feels extrastuff">Now it feels like Temperature : 0  °C</p>
+            <p class="atmosp extrastuff">The Atmospheric Pressure is : 0 hPa</p>
+        </div>
+        <div class="col-12 text-center col-md-6 col-lg-6 col-xl-6 text-xl-left ">
+            <p class="mintemp extrastuff">The Minimum Temperature is :  0  °C</p>
+            <p class="maxtemp extrastuff">The Maximun Temperature is :  0  °C</p>
+        </div>
+    </div>
+
+    <!-- sixth row wind humidity visibility -->
+        <div class="row pt-xl-2 pt-sm-3 mb-xl-5  wind-humi-visi ">
+            <div class="col-4 text-center">
+                <span class="material-symbols-outlined">
+                    air
+                    </span>
+                    <p class="wind">0  km/h</p>
+                    <p class="abc">Wind</p>
+            </div>
+            <div class="col-4 text-center">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span>
+                    <p class="humidity">0  %</p>
+                    <p class="abc">Humidity</p>
+            </div>
+            <div class="col-4  text-center">
+                <span class="material-symbols-outlined">
+                    visibility
+                    </span>
+                    <p class="visibility">0  km/h</p>
+                    <p class="abc">Visibility</p>
+            </div>
+        </div>
+
+      
+   </div>
+     <!-- developer details -->
+     <hr class="hrline  mt-5">
+   <div class="row dtls pb-5 ">
+    <div class="col-12 col-xl-12 col-sm-12 text-sm-center col-lg-12 col-md-12 text-center">
+        <h5 class="mr-5 font-weight-bolder ">Developer details</h5>
+    </div>
+    <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-sm-center text-center">
+        <p class="mr-5">Contact me on</p>
+    </div>
+    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-md-center text-sm-left text-xl-center text-left">
+        <p class="mr-5 mt-3 mt-lg-3 mt-md-3 ">Name : R kiran</p>
+        <a href="https://github.com/RuthalaKiran" target="_blank">Github</a>
+        <p class="mt-3">Instagarm : <a href="https://www.instagram.com/mr__kiran143/" target="_blank">Mr__kiran143</a></p>
+    </div>
+    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 text-md-center text-xl-center text-sm-left text-left">
+        <p class="mr-5 mt-3 mt-sm-3"><a href="mailto:kiranruthalakiran@gmail.com">Email : kiranruthalakiran@gmail.com</a></p>
+        <a href="https://www.linkedin.com/in/kiran-ruthala-b2b734275/"  target="_blank">Linkedin</a>
+        <p class="mt-3">Facebook : <a href="https://www.facebook.com/ruthala.kiran.5" target="_blank">Kiran Ruthala</a></p>
+    </div>
+</div>
+ </div>  
+
+
+
+ <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  
+</body>
+</html>
